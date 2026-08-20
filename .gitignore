@@ -1,0 +1,36 @@
+# Terraform working directory and provider/plugin cache
+.terraform/
+**/.terraform/*
+
+# Terraform state files may contain sensitive data
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Terraform plan output
+*.tfplan
+*.plan
+
+# Local variable and override files
+*.tfvars
+*.tfvars.json
+!terraform.tfvars.example
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Keep the provider lock file in Git for reproducible provider installs
+!.terraform.lock.hcl
+
+# CLI configuration
+.terraformrc
+terraform.rc
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
